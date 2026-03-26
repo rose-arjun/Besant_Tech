@@ -38,24 +38,23 @@ public class ArrayConcepts {
 			}
 		}
 ------------------------------------
-*/
+
 //4.Merge two sorted array insto one sorted array
-		int[] a= {11,3,5,6};
-		int[] b= {200,40,6};
+		int[] a= {101,3,5,6};
+		int[] b= {200,40,16};
 		int[] c=new int[a.length+b.length];
-		System.out.println("C Array length"+c.length);
+		System.out.println("C Array length: "+c.length);
 		Arrays.sort(a);
 		Arrays.sort(b);
-	//	System.out.println(Arrays.toString(a));
-		//System.out.println(Arrays.toString(b));
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(b));
 		
 		int i = 0, j = 0, k = 0;
 
         while(i < a.length && j < b.length){
-            if(a[i] < b[j]){
-            	System.out.println("B"+c[k]);
-                c[k++] = a[i++];//
-            	System.out.println("A"+c[k++]);
+            if(a[i] < b[j]) {
+                c[k++] = a[i++];
+        
                 
             } else {
                 c[k++] = b[j++];
@@ -69,8 +68,33 @@ public class ArrayConcepts {
         while(j < b.length){
             c[k++] = b[j++];
         }
-
-        System.out.println(Arrays.toString(c));
+        System.out.println("Merged Array: "+ Arrays.toString(c));
+--------------------------------------------------
+*/
+//5.Find the second largest element in Array
+		int[] a= {1,20,3,4,5};
+		int first_lar=a[0];
+		for(int i=0;i<a.length;i++) {
+			if(first_lar<a[i])
+			{
+				first_lar=a[i];
+			}
+			
+		}
+        System.out.println(first_lar);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+     
     }
 }
 

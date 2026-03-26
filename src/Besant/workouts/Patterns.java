@@ -362,9 +362,191 @@ for(int j=1;j<=3;j++) {
 1 2 3 4 
 
 -------------------------------
-*/
-//-----------------------------
 
+//20. Hollow Triangle Pattern
+		int n=5;
+ 		for(int i=1;i<=n;i++) {
+ 			for(int k=1;k<=n-i;k++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=i;j++) {
+				if(j==1 ||j==i || i==1 || i==n) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+------------output-----------
+     * 
+    * * 
+   *   * 
+  *     * 
+ * * * * * 
+
+-------------------------------
+
+//21.Hollow Reverse Triangel Pattern
+		int n=5;
+ 		for(int i=1;i<=n;i++) {
+ 			for(int k=i;k>=1;k--) {
+				System.out.print(" ");
+			}
+			for(int j=i;j<=n;j++) {
+				if(j==n ||j==i || i==n || i==1) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}		
+------------output-----------	
+ 		 * * * * * 
+ 		  *     * 
+ 		   *   * 
+ 		    * * 
+ 		     * 	
+-------------------------------
+
+//22.Hollow Diamond Pyramid
+		int n1=5;
+ 		for(int i=1;i<=n1;i++) {
+ 			for(int k=1;k<=n1-i;k++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=i;j++) {
+				if(j==1 ||j==i || i==1 ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+ 		for(int i=1;i<=n1-1;i++) {
+ 			for(int k=i;k>=1;k--) {
+				System.out.print(" ");
+			}
+			for(int j=i;j<=n1-1;j++) {
+				if(j==n1-1 ||j==i || i==n1-1 ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	
+---------output--------------
+ 		
+ 	    * 
+ 	   * * 
+ 	  *   * 
+ 	 *     * 
+ 	*       * 
+ 	 *     * 
+ 	  *   * 
+ 	   * * 
+ 	    * 
+-------------------------------
+
+//23.Hollow Hourglass Pattern
+		int t=4;
+		for(int i=1;i<=t;i++) {
+ 			for(int k=i;k>=1;k--) {
+				System.out.print(" ");
+			}
+			for(int j=i;j<=t;j++) {
+				if(j==t ||j==i || i==t ||i==1) {
+					System.out.print("* ");
+				}	
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+		//------down area
+		int d=3;
+		for(int i=1;i<=d;i++) {
+ 			for(int k=1;k<=d-i+1;k++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=i+1;j++) {
+				if(j==1 ||j==i+1 || i==1||i==d ) {
+					System.out.print("* ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	
+-------------Output------------------
+* * * * 
+ *   * 
+  * * 
+   * 
+  * * 
+ *   * 
+* * * * 
+------------------------------------
+
+//24.Pascal Triangle Patter
+		//int num=1;
+		for(int i=0;i<=3;i++) {
+			int num=1;
+			for(int k=1;k<=3-i;k++) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<=i;j++) {
+				System.out.print(num+" ");
+				num=num*(i-j)/(j+1);
+				
+				
+				
+			}
+			System.out.println();
+		}
+------------output-------------
+   1 
+  1 1 
+ 1 2 1 
+1 3 3 1 
+-------------------------------
+*/
+//25. Right Pascal Triangle
+		
+		for(int i=0;i<=3;i++) {
+			int num=1;
+			for(int k=1;k<=3-i;k++) {
+				System.out.print(" ");
+			}
+			for(int j=0;j<=i;j++) {
+				System.out.print("* ");
+				
+				
+				
+				
+			}
+			System.out.println();
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
